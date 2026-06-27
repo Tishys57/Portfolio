@@ -30,7 +30,7 @@ export const metadata = {
   description: "B.Tech Artificial Intelligence student portfolio. Developing specialized deep learning, machine learning, and natural language processing pipelines.",
   metadataBase: new URL("https://tishyadhakal.com"),
   icons: {
-    icon: "/icon.png",
+    icon: "/Portfolio/icon.png",
   }
 };
 
