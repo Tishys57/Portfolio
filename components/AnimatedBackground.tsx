@@ -11,7 +11,7 @@ export default function AnimatedBackground() {
       {/* Subtle blueprint-style logo stamp in the bottom-right corner */}
       <div className="absolute right-[-80px] bottom-[-80px] md:right-12 md:bottom-12 w-[320px] h-[350px] md:w-[480px] md:h-[512px] opacity-30 pointer-events-none mix-blend-multiply select-none">
         <img
-          src="/logo.png"
+          src="/Portfolio/logo.png"
           alt="Workstation Seal"
           className="w-full h-full object-contain filter grayscale contrast-125 brightness-95"
         />

@@ -6,7 +6,7 @@ export default function Logo({ className = "" }: { className?: string }) {
   return (
     <div className={`flex items-center ${className}`}>
       <img
-        src="/Portfolio/logo.png" // ⚠️ Matches '/Portfolio/logo.png'
+        src="/Portfolio/nav-logo.png" 
         alt="Workstation Logo"
         width="40"
         height="40"
