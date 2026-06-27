@@ -6,8 +6,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   trailingSlash: true,
-  // If deploying to username.github.io/repo-name, specify the basePath:
-  // basePath: '/repo-name',
+  basePath: '/Portfolio', 
 };
 
 export default nextConfig;

@@ -20,7 +20,7 @@ function PixelCPU() {
       
       {/* Your Custom 512x512px Logo rendered inside the screen */}
       <image
-        href="/logo.png"
+        href="/Portfolio/logo.png" // Strictly matches '/Portfolio'
         x="5"
         y="5"
         width="22"

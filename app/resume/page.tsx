@@ -13,9 +13,9 @@ export default function ResumePage() {
           <h1 className="font-pixel text-2xl md:text-4xl text-[#361f30] tracking-wide uppercase">CURRICULUM VITÆ</h1>
           <p className="text-xs md:text-sm font-mono-tech text-[#72636B] mt-1">MODULE_ARCHIVE // VERIFIED_NODE</p>
         </div>
-        {/* Opens the PDF in a new tab, allowing natural reading/downloading via native PDF viewer controls */}
+        {/* Opens the PDF in a new tab using the custom Portfolio basePath */}
         <a 
-          href="/Tishya_Dhakal_Resume.pdf" 
+          href="/Portfolio/Tishya_Dhakal_Resume.pdf" // Strictly matches '/Portfolio'
           target="_blank" 
           rel="noopener noreferrer" 
           className="w-full md:w-auto"
@@ -48,7 +48,7 @@ export default function ResumePage() {
             // Core Objectives
           </h3>
           <p className="text-sm md:text-base leading-relaxed text-[#72636B]">
-            Dedicated Artificial Intelligence engineering student with a deep focus on custom model architectures, NLP pipelines, and clinical signal processing algorithms. Proven ability to architect modular datasets and optimize training dynamics.
+            Dedicated Artificial Intelligence engineering student with a deep focus on custom model architectures, low-resource NLP pre-training pipelines, and clinical signal processing algorithms. Proven ability to architect modular datasets and optimize training dynamics.
           </p>
         </div>
 
@@ -65,6 +65,8 @@ export default function ResumePage() {
             <p className="text-sm md:text-base text-[#72636B]">Kathmandu University, Dhulikhel, Nepal</p>
             <div className="mt-2 flex flex-wrap items-center gap-3 text-xs md:text-sm font-mono-tech">
               <span className="text-[#ff5500] font-bold">CGPA: 3.75 / 4.0</span>
+              <span className="text-[#361f30]/30">|</span>
+              <span className="text-[#72636B]">Syllabus: Deep Learning, Computer Vision, Speech/NLP Pipelines</span>
             </div>
           </div>
         </div>
@@ -95,7 +97,7 @@ export default function ResumePage() {
             <div>
               <div className="flex justify-between items-start gap-4">
                 <h4 className="font-heading font-black text-base md:text-lg text-[#2E2430]">LEGIT: Nepali Legal GPT-2 SLM from Scratch</h4>
-                
+                <span className="text-xs md:text-sm font-mono-tech text-[#a300e0]">[AISP 322]</span>
               </div>
               <ul className="list-disc pl-5 mt-2 space-y-1.5 text-xs md:text-sm text-[#72636B] leading-relaxed">
                 <li>Pre-trained a 30M parameter decoder model from scratch utilizing custom-built tokenizers.</li>
@@ -107,7 +109,7 @@ export default function ResumePage() {
             <div>
               <div className="flex justify-between items-start gap-4">
                 <h4 className="font-heading font-black text-base md:text-lg text-[#2E2430]">PELIPE: Patient-Agnostic Seizure Classifier</h4>
-                
+                <span className="text-xs md:text-sm font-mono-tech text-[#a300e0]">[AISP 311]</span>
               </div>
               <ul className="list-disc pl-5 mt-2 space-y-1.5 text-xs md:text-sm text-[#72636B] leading-relaxed">
                 <li>Evaluated stacked 1D-CNN baselines for personalized subject classifications.</li>
@@ -121,4 +123,4 @@ export default function ResumePage() {
       </div>
     </div>
   );
-} 
+}
