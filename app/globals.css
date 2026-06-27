@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #E5D9C0;       /* Softer, glare-free Aged Parchment */
+    --foreground: #2E2430;       /* Dark Charcoal Headings */
+    --card: #F7EFE2;             /* Primary Surface - Brightest */
+    --card-secondary: #F2E6D6;   /* Secondary Surface */
+    --border: #433347;           /* Hardware Panel Borders */
+    --accent-orange: #BC6034;    /* Desaturated Burnt Orange */
+    --accent-purple: #9146FF;    /* System Purple */
+    --status-green: #3FA56A;     /* Active Green */
+    --text-muted: #72636B;       /* Muted Warm Gray Description */
+  }
+}
+
+body {
+  font-family: var(--font-mono), monospace;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 1rem; /* 16px default */
+  line-height: 1.625;
+}
+
+/* Stable Retro CRT & Static VHS Scanlines (Reduced opacity for comfort) */
+.scanlines {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    rgba(229, 217, 192, 0) 50%, 
+    rgba(67, 51, 71, 0.03) 50% /* Muted line overlay */
+  );
+  background-size: 100% 6px;
+  z-index: 99;
+  opacity: 0.35; /* Drastically reduced to prevent eye strain */
+}
+
+.cyber-grid-overlay {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(67, 51, 71, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(67, 51, 71, 0.03) 1px, transparent 1px);
+  mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 90%);
+}
+
+/* Slashed Corners */
+.clip-cyber-card {
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+}
+
+.clip-cyber-btn {
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+}
+
+/* Retro HUD Shadows */
+.pixel-shadow-violet {
+  box-shadow: 6px 6px 0px 0px var(--glow-violet);
+}
+
+.pixel-shadow-border {
+  box-shadow: 6px 6px 0px 0px var(--border);
+}
+
+.pixel-border-double {
+  border: 5px double var(--border);
+}
+
+/* Technical HUD brackets */
+.hud-corner-tl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid var(--accent-orange);
+  border-left: 3px solid var(--accent-orange);
+}
+
+.hud-corner-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 3px solid var(--accent-purple);
+  border-right: 3px solid var(--accent-purple);
+}
+
+.font-mono-tech {
+  font-family: var(--font-mono), monospace;
+  letter-spacing: 0.06em;
+}
+
+.font-pixel {
+  font-family: var(--font-pixel), cursive;
+}
+
+.font-console {
+  font-family: var(--font-console), monospace;
+}
