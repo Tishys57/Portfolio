@@ -156,10 +156,10 @@ export default function Home() {
         <section className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <h2 className="font-heading font-black text-2xl md:text-4xl text-[#2E2430] uppercase">
-              // ACTIVE CORE ARTIFACTS
+              // LATEST PROJECTS
             </h2>
             <p className="text-xs md:text-sm font-mono-tech text-[#72636B]">
-              Custom system topologies. Let my active developments speak for what I have achieved.
+              Custom system topologies. End to End designs. 
             </p>
           </div>
 
